@@ -1,0 +1,56 @@
+/* Contenedor del formulario */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+  gap: 20px; /* Espaciado entre filas y columnas */
+  margin-top: 20px;
+}
+
+/* Filas del formulario */
+.form-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Etiquetas */
+.form-row label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #ffffff; /* Morado principal */
+}
+
+/* Campos de entrada */
+.form-row input,
+.form-row textarea,
+.form-row select {
+    width: 100%; /* Ocupa el ancho completo de la columna */
+    max-width: 400px; /* Ancho máximo para limitar el tamaño */
+    padding: 8px; /* Reducir el padding */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Botón de enviar */
+.form-row.full-width {
+  grid-column: span 2; /* Ocupa ambas columnas */
+  text-align: center;
+   
+}
+
+.form-row button {
+  padding: 10px 20px;
+  background-color: #56125b; /* Morado principal */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.form-row button:hover {
+  background-color: #aa63ff; /* Escala de morado */
+  background: linear-gradient(115deg, #56125b 10%, #aa63ff 90%); /* Escala de morados */
+}

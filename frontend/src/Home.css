@@ -1,0 +1,71 @@
+/* Estilo global */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Contenedor principal */
+  .home-container {
+    margin: 0 auto; /* Centra horizontalmente */
+    padding: 90px 20px; /* Ajusta el padding para mantener espacio interno */
+    max-width: 1200px; /* Limita el ancho máximo del contenedor */
+    text-align: center;
+  }
+  
+  /* Menú de navegación */
+  .menu {
+    display: flex;
+    justify-content: center; /* Centra el menú horizontalmente */
+    gap: 20px; /* Espaciado uniforme entre los elementos */
+    position: relative;
+    z-index: 1;
+    max-width: 900px;
+    border-radius: 80px;
+    height: 100px; /* Altura del menú */
+    padding: 18px 28px;
+    margin: 0 auto; /* Centra el menú dentro del contenedor */
+  }
+  
+  @media (max-width: 650px) {
+    .menu {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  /* Elementos del menú */
+  .item {
+    display: center;
+    padding: 10px 15px; /* Espaciado interno uniforme */
+    cursor: pointer;
+    transition: all 0.3s ease-out; /* Transición suave para el hover */
+    text-decoration: none;
+    color: #ffffff; /* Color morado principal */
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-size: 14px;
+    border-radius: 5px;
+   
+  }
+  
+  .item:hover {
+    color: #ffffff; /* Escala de morado */
+    background-color: #bfa7dd; /* Fondo claro al pasar el cursor */
+    background: linear-gradient(115deg, #56125b 10%, #aa63ff 90%); /* Escala de morados */
+    height:90%;
+}
+  
+  .item.active {
+    color: #fff;
+    background-color: #56125b; /* Fondo morado para el elemento activo */
+  }
+  
+  /* Indicador (opcional, si deseas agregar un efecto visual adicional) */
+  .indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 30px;
+  }

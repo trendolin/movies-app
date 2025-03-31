@@ -1,0 +1,71 @@
+/* src/styles/index.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #1C1C3A; /* Fondo oscuro morado */
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+.container {
+  margin-top: 70px; /* Ajusta este valor según la altura de la navbar */
+  padding: 20px;
+}
+
+a {
+  color: #8A3FFC; /* Acento morado claro */
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+table {
+  margin-top: 30px; /* Espacio entre el botón y la tabla */
+  width: 100%; /* Asegura que la tabla ocupe todo el ancho disponible */
+  border-collapse: collapse; /* Elimina los espacios entre bordes */
+  text-align: center; /* Alinea el texto a la izquierda */
+  border-radius: 20px; /* Bordes redondeados */
+  overflow: hidden; /* Asegura que los bordes redondeados se apliquen correctamente */
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Sombra para la tabla */
+}
+table th, table td {
+  padding: 10px; /* Espaciado interno en las celdas */
+  border: 1px solid #56125b; /* Bordes morados */
+  
+}
+
+table th {
+  background-color: #56125b; /* Fondo morado para los encabezados */
+  color: #ffffff; /* Texto blanco */
+  font-size: 14px; /* Tamaño de fuente */
+}
+
+table button {
+  padding: 5px 10px; /* Tamaño más pequeño */
+  background-color: #56125b; /* Morado principal */
+  color: #fff; /* Texto blanco */
+  border: none; /* Sin bordes */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  font-size: 12px; /* Tamaño de fuente más pequeño */
+  transition: background-color 0.3s ease; /* Transición suave */
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+table button:last-child {
+  margin-right: 0; /* Elimina el margen derecho del último botón */
+}
+
+table button:hover {
+  background-color: #aa63ff; /* Fondo más claro al pasar el cursor */
+  background: linear-gradient(115deg, #56125b 10%, #aa63ff 90%); /* Escala de morados */
+}
