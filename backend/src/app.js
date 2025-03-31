@@ -9,7 +9,6 @@ app.use(cors());
 
 // Rutas API
 app.use('/api/directores', require('./routes/directorRoutes'));
-app.use('/api/peliculas', require('./routes/movieRoutes'));
 app.use('/api/productoras', require('./routes/productoraRoutes'));
 app.use('/api/tipos', require('./routes/tipoRoutes'));
 app.use('/api/media', require('./routes/mediaRoutes'));
