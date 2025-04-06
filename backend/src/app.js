@@ -5,7 +5,10 @@ const app = express();
 
 // Middlewares
 app.use(express.json());
-app.use(cors());
+//app.use(cors());
+app.use(cors({
+    origin: 'https://movies-app-2-mokg.onrender.com'
+  }));
 
 // Rutas API
 app.use('/api/directores', require('./routes/directorRoutes'));
