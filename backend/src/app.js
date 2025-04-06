@@ -1,5 +1,9 @@
 const express = require('express');
-const cors = require('cors');
+const corsOptions = {
+  origin: ['https://movies-app-2-mokg.onrender.com'],
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  credentials: true,
+};
 
 const app = express();
 
@@ -9,6 +13,7 @@ app.use(express.json());
 app.use(cors({
     origin: 'https://movies-app-2-mokg.onrender.com'
   }));
+app.options('*', cors(corsOptions));
 
 // Rutas API
 app.use('/api/directores', require('./routes/directorRoutes'));
