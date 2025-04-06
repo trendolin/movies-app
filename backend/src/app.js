@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors');
 const corsOptions = {
   origin: ['https://movies-app-2-mokg.onrender.com'],
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
